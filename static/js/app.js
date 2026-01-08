@@ -136,6 +136,7 @@ function renderTabla(data) {
     data.forEach(item => {
         const area        = item.area || "";
         const ubicacion   = item.ubicacion || "";
+        const descripcion = item.descripcion || "";
         const stock       = Number(item.stock) || 0;
         const asignado    = Number(item.asignado) || 0;
         const bloqueado   = item.bloqueado || "";
@@ -146,6 +147,7 @@ function renderTabla(data) {
             <tr class="${bloqueado ? 'bloqueado' : ''}">
                 <td>${area}</td>
                 <td>${ubicacion}</td>
+                <td>${descripcion}</td>
                 <td>${stock}</td>
                 <td>${asignado}</td>
                 <td>${bloqueado ? "SÍ" : "NO"}</td>
@@ -155,4 +157,5 @@ function renderTabla(data) {
 
     totalDiv.innerHTML = `<strong>Total stock:</strong> ${total}`;
 }
+
 
