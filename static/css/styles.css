@@ -1,0 +1,166 @@
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #000000;
+
+    /* Fondo con imagen */
+    background: url("/static/img/fondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* =========================
+   TÍTULO
+   ========================= */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   ESTADO EXCEL
+   ========================= */
+.estado {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0a7d2c;
+}
+
+
+/* =========================
+   INPUT Y BOTONES
+   ========================= */
+input[type="text"] {
+    padding: 6px;
+    width: 200px;
+    font-size: 14px;
+}
+
+button {
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background: #0b5ed7;
+    color: white;
+    margin-left: 4px;
+}
+
+button:hover {
+    background: #084298;
+}
+
+
+/* =========================
+   RESULTADOS
+   ========================= */
+#resultado {
+    margin-top: 20px;
+}
+
+/* Caja por cada registro */
+#resultado ul {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+/* Cada campo */
+#resultado li {
+    margin-bottom: 4px;
+    color: #000000;
+    font-size: 13px;
+}
+
+/* =========================
+   MENSAJE SIN RESULTADOS
+   ========================= */
+#resultado b {
+    color: red;
+}
+
+
+/* =========================
+   TABLAS
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #0b5ed7;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr.bloqueado {
+    background: #ffe0e0;
+}
+
+
+
+/* =========================
+   LOGO FLOTANTE
+   ========================= */
+.logo-flotante {
+    height: 50px;
+}
+
+
+/* Caja blanca para contenido */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* =========================
+   HEADER SUPERIOR
+   ========================= */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #16d8df;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+
+
+
+
+

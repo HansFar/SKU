@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador SKU</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<!-- ===== HEADER CON LOGO ===== -->
+<header class="header">
+    <img src="/static/img/logo.png" class="logo-flotante" alt="Logo Empresa">
+    <h1>Buscador de Productos por SKU</h1>
+</header>
+
+<!-- ===== CONTENEDOR PRINCIPAL ===== -->
+<div class="container">
+
+    <div id="estado" class="estado"></div>
+
+    <input type="text" id="sku" placeholder="Ingrese SKU">
+    <button type="button" onclick="buscar()">Buscar</button>
+    <button onclick="actualizar()">Actualizar</button>
+
+    <hr>
+
+    <input type="file" id="excelFile" accept=".xlsx">
+    <button onclick="subirExcel()">Subir Excel</button>
+
+    <hr>
+
+    <div class="filtros">
+        <select id="filtroArea" onchange="aplicarFiltros()">
+            <option value="">Todas las áreas</option>
+        </select>
+    </div>
+
+    <table id="tablaResultados">
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Ubicación</th>
+                <th>Stock</th>
+                <th>Asignado</th>
+                <th>Bloqueado</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="totalStock"></div>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
